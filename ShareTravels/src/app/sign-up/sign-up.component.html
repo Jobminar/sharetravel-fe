@@ -1,0 +1,59 @@
+
+<div class="container">
+    <div class="sub-container">
+        <span id="sign-text">Create Account</span>
+        <p>Fill your information below or register
+            with your social account.
+         </p>
+        <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+            <div >
+                <label for="Name">Name:</label>
+                <br>
+                <input type="text" id="Name" formControlName="Name" required>
+            </div>
+            <div >
+                <label for="phoneNumber">Phone number:</label>
+                <br>
+                <input type="tel" id="phoneNumber" formControlName="phoneNumber" required>
+            </div>
+            <div >
+                <label for="aadharNumber">Aadhar number:</label>
+                <br>
+                <input type="text" id="aadhaar_number" formControlName="aadhaar_number" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <br>
+                <!-- Password input with dynamic type -->
+                <div style="position: relative;">
+                    <input [type]="passwordVisible ? 'text' : 'password'" id="password" formControlName="password" required>
+                    <!-- Show/Hide password checkbox -->
+                    <label for="togglePassword" style="position: absolute; top: 60%; right: 10%; transform: translateY(-50%); cursor: pointer;">
+                        <input type="checkbox" id="togglePassword" (change)="togglePasswordVisibility()" style="display: none;">
+                        <span>{{ passwordVisible ? 'Hide' : 'Show' }}</span>
+                    </label>
+                </div>
+            </div>
+            <div class="forgot-div"><input type="checkbox" (change)="checked()">&nbsp; Agree with<a href="">&nbsp; terms and condition</a></div>
+            <div class="submit-div">
+                <button type="submit" >Sign Up</button>
+            </div>
+        </form>
+
+        <div class="alt-main-div">
+            <div class="line-container">
+                <hr>
+                <span class="text">or sign Up with </span>
+                <hr>
+            </div>
+            <div class="alt-div">
+                <div class="alt" (click)="signInWithGoogle()"><img src="assets\getStarted\google.png"></div>
+                <div class="alt"><img src="assets\getStarted\facebook.png"></div>
+                <div class="alt"><img src="assets\getStarted\apple.png"></div>
+            </div>
+            <div>
+                <p>already have an account? <a href="">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</div>

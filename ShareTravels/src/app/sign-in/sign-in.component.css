@@ -1,0 +1,102 @@
+.container
+{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.sub-container
+{
+    position: relative;
+    top: 10%;
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+#sign-text
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.8rem ;
+    font-weight: 600;
+    line-height: 2.1rem;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.8rem ;
+    font-weight: 400;
+    line-height: 2.1rem;
+}
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem ;
+    font-weight: 400;
+    line-height: 2.1rem;
+    /* text-align: left; */
+    float: left;
+}
+input{
+    width: 90%;
+    height: 2.5rem;
+    /* border: 1px solid blue; */
+    border-radius: 0.4rem;
+    border: none;
+    background-color: rgba(245, 245, 245, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.5rem ;
+    font-weight: 400;
+}
+.forgot-div
+{
+    float: right;
+    margin-right: 1rem;
+    line-height: 2rem;
+}
+.submit-div button
+{
+   background-color: rgba(243, 182, 100, 1);
+   width: 90%;
+    border: none;
+    height: 2.5rem;
+    border-radius: 1rem;
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.alt-main-div
+{
+    display: grid;
+    grid-gap: 30%;
+}
+.line-container {
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    width: 100%; /* Adjust the width of the container as needed */
+}
+
+hr {
+    flex: 1; /* Make the horizontal line take up the remaining space */
+    border: none; /* Remove the default border styling */
+    border-top: 2px solid rgb(119, 119, 119); /* Customize the line style */
+}
+
+.text {
+    margin: 0 10px; /* Add horizontal margin around the text */
+}
+
+.alt-div
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.alt
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    
+}
+.alt img{
+    position: relative;
+    top: 0.5rem;
+}

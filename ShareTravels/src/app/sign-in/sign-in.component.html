@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="sub-container">
+        <span id="sign-text">Sign In</span>
+        <p>Hi! Welcome back, you’ve been missed</p>
+        <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+            <div class="">
+                <label for="phoneNumber">Phone number:</label>
+                <br>
+                <input type="tel" id="phoneNumber" formControlName="phoneNumber" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <br>
+                <!-- Password input with dynamic type -->
+                <div style="position: relative;">
+                    <input [type]="passwordVisible ? 'text' : 'password'" id="password" formControlName="password" required>
+                    <!-- Show/Hide password checkbox -->
+                    <label for="togglePassword" style="position: absolute; top: 60%; right: 10%; transform: translateY(-50%); cursor: pointer;">
+                        <input type="checkbox" id="togglePassword" (change)="togglePasswordVisibility()" style="display: none;">
+                        <span>{{ passwordVisible ? 'Hide' : 'Show' }}</span>
+                    </label>
+                </div>
+            </div>
+            <div class="forgot-div"><a href="">Forgot password</a></div>
+            <div class="submit-div">
+                <button type="submit">Sign In</button>
+            </div>
+        </form>
+
+        <div class="alt-main-div">
+            <div class="line-container">
+                <hr>
+                <span class="text">or sign in with </span>
+                <hr>
+            </div>
+            <div class="alt-div">
+                <div class="alt"><img src="assets\getStarted\google.png"></div>
+                <div class="alt"><img src="assets\getStarted\facebook.png"></div>
+                <div class="alt"><img src="assets\getStarted\apple.png"></div>
+            </div>
+            <div>
+                <p>Don’t have an account? <a (click)="navToSignUp()">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</div>

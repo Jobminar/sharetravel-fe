@@ -1,0 +1,195 @@
+.container
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.sub-container
+{
+    margin: 0.7rem;
+    margin-top: 1.3rem;
+    display: grid;
+   grid-gap: 1rem;
+   /* border: 1px solid black; */
+   position: relative;
+  
+   overflow-y: auto;
+}
+.poster
+{
+    /* border: 1px solid red; */
+    width: 100%;
+    height:fit-content;
+}
+.poster img{
+    height: 100%;
+    width: 100%;
+}
+.services
+{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    height: 3rem;
+    
+}
+.book-service
+{
+    margin-top: 0.5rem;
+    display: flex;
+    border: 1px solid black;
+    width: 46%;
+    height: 2.5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.6rem;
+}
+.book-service span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.location-div
+{
+    display: grid;
+    grid-gap: 0.5rem;
+   
+}
+.location
+{
+    border: 1px solid rgba(0, 0, 0, 1);
+    height: 3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  
+    /* justify-content: center; */
+
+}
+.location input
+{
+    height: 2rem;
+    width: 75%;
+    font-size: 1rem;
+    border: none;
+    /* border: 1px solid rgb(12, 213, 203); */
+}
+.location input:focus {
+    outline: none;
+}
+.iconss
+{
+   /* border: 1px solid blue; */
+    font-size: 20px;
+    width: 4rem;
+  
+}
+.refernce
+{
+    background-color:rgba(243, 182, 100, 1);
+    height: 9rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.refer-txt h3{
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 16.px;
+}
+.refer-txt p
+{
+    font-style: italic;
+    font-size: 0.8rem;
+    font-family: 'Arimo Hebrew Subset Italic', sans-serif;
+    font-weight: 400;
+    line-height: 11.5px;
+ }
+ .sav
+ {
+   
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    float: left;
+    /* border: 1px solid rgb(29, 29, 30); */
+ }
+ .saving
+ {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+ }
+ .sub-saving
+ {
+    /* border: 1px solid rgb(239, 34, 3); */
+    display: flex;
+    justify-content: space-around;
+ }
+ .sav-refer
+ {
+    width: 45%;
+    height: 8rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    /* box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.9); */
+ }
+ .div-img
+ {
+    width: 100%;
+   height: 5rem;
+ }
+ .sav-refer img
+ {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blueviolet; */
+ }
+ .sav:nth-child(2)
+ {
+    color: red;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+ }
+
+ /* .sub-saving:nth-child(2)
+ {
+    border: 1px solid rgb(249, 60, 7);
+ } */
+
+ .fotter
+ {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid black;
+    align-items: center;
+    background-color:white;
+ }
+ .foter-sec
+ {
+    margin-top: 0.7rem;
+ }
+
+ @media (max-height: 870px) {
+    /* Styles to apply before 890px */
+    /* For example, let's change the background color of the body */
+   .dummy
+   {
+    height: 4rem;
+    /* border: 1px solid black; */
+   }
+  }
+  

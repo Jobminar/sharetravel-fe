@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .icons {
+    width: 15%;
+    border: 1px solid black;
+    text-align: center; /* Center icons within containers */
+  }
+  
+  .icons fa-icon {
+    color: blue; /* Default icon color */
+    font-size: 24px;
+  }
+  
+  .icons:hover fa-icon {
+    color: orange; /* Highlight color for active icons */
+  }
+  
